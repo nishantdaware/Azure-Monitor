@@ -75,8 +75,8 @@ resource "azurerm_linux_virtual_machine" "linux-vm" {
   ]
 
   admin_ssh_key {
-    username   = "adminuser"
-    public_key = file("C:/Users/Nishant/.ssh/id_rsa.pub")
+    username   = "adminuser" // username used for ssh
+    public_key = file("C:/Users/Nishant/.ssh/id_rsa.pub") // Create a key pair & call your public key with accurate path
   }
 
   os_disk {
